@@ -123,7 +123,7 @@ img {
 
 .main-section {
     background-color: #2e2f42;
-    padding-bottom: 188px;
+    padding: 188px 0
 }
 
 
@@ -137,8 +137,7 @@ img {
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
-        max-width: 498px;
-        padding-top: 188px;
+        max-width: 496px;
         padding-bottom: 48px;
         margin-left: auto;
         margin-right: auto;
@@ -166,9 +165,16 @@ background-color: #404BBF;
         height: 56px;
         margin-left: auto;
         margin-right: auto;
+        border: none;
 }
 
 /* BANEFITS */
+
+.main-title  {
+        visibility: hidden;
+        
+        margin-bottom: 8px;
+}
 
 .main-section-banefits {
         padding-top: 120px;
@@ -177,19 +183,17 @@ background-color: #404BBF;
 }
 
 .main-list-banefits {
-        display: inline-flex;
+        align-items: flex-start;
+        display: flex;
+        gap: 24px;
+        
 }
 
 .main-item-banefits {
-        margin-right: 24px;
-        display: flex;
-        align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
         gap: 8px;
-     
-      
-       
+        width: calc((100% - 72px) / 4);
 }
 
 
@@ -211,9 +215,16 @@ background-color: #404BBF;
 
 /* TEAM */
 
+.main-title-team {
+        margin-bottom: 8px
+}
+
+.main-text-team {
+        margin-bottom: 72px;
+}
+
 .team-card-div {
-        padding-top: 32px;
-        padding: 32px;
+        padding: 32px 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -230,11 +241,13 @@ background-color: #404BBF;
 }
 
 .main-list-team {
-        display: inline-flex;
+        align-items: baseline;
+        display: flex;
         gap: 24px;
 }
 
 .main-item-team {
+        border-radius: 0px 0px 4px 4px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -247,7 +260,6 @@ background-color: #404BBF;
 }
 
 .main-text-team {
-        padding-bottom: 72px;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
@@ -277,15 +289,17 @@ background-color: #404BBF;
 
 /* portfolio */
 
+.port-container {
+        padding: 32px 16px
+}
+
+.main-title-portfolio {
+        margin-bottom: 8px;
+}
+
 
 .portfolio-card-div {
-        padding-top: 32px;
-        padding: 32px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
-        gap: 8px;
+        padding: 32px 16px
 }
 
 .main-section-portfolio {
@@ -296,6 +310,7 @@ background-color: #404BBF;
 
 .main-list-portfolio {
         gap: 24px;
+        row-gap: 48px;
         display: flex;
         flex-wrap: wrap;
 }
@@ -303,7 +318,6 @@ background-color: #404BBF;
 
 
 .main-text-portfolio {
-        padding-bottom: 72px;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
@@ -311,6 +325,7 @@ background-color: #404BBF;
         text-align: center;
         color: #2e2f42;
         text-transform: capitalize;
+        margin-bottom: 72px;
 }
 
 .main-title-portfolio {
@@ -339,8 +354,13 @@ background-color: #404BBF;
     padding-bottom: 100px;
 }
 
-.footer-logo .logo-part {
+.logo {
         display: inline-block;
+        margin-bottom: 16px;
+}
+
+.footer-logo .logo-part {
+        
         margin-bottom: 16px;
     color: #f4f4fd;
 }
