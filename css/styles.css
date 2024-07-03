@@ -179,10 +179,10 @@ background-color: #404BBF;
         overflow: hidden;
         border: 0;
         clip: rect(0 0 0 0);
+        clip-path: inset(100%);
 }
 
 .main-title  {
-        margin-bottom: 8px;
 }
 
 .main-section-banefits {
@@ -207,6 +207,7 @@ background-color: #404BBF;
 
 
 .main-title-banefits {
+        margin-bottom: 8px;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
